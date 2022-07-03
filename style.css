@@ -21,14 +21,14 @@ h2{
 .main-list{
     width: 100%;
     height: 100px;
-    border: 3px solid red;
-    padding: 30px 60px;
+    padding: 30px 200px;
+    background-color: #f44336;
 }
 
 .list-item{
     width: 100%;
     height: 50px;
-    border: 3px solid blue;
+    padding: 15px 30px;
 }
 
 .list-item:nth-child(odd){
@@ -37,4 +37,28 @@ h2{
 
 .list-item:nth-child(even){
     background-color: #eee;
+}
+
+.main-list-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.input-box{
+    outline: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.add-btn{
+    float: left;
+    padding: 10px 30px;
+    background-color: #eee;
+}
+
+.add-btn:hover{
+    cursor: pointer;
+    transition: .5s;
+    background-color: #ddd;
 }
