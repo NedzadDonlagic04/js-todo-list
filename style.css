@@ -3,3 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.container{
+    margin: 5vh auto 0 auto;
+    width: 50vw;
+    height: auto;
+    border: 3px solid black;
+}
