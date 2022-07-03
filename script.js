@@ -11,10 +11,28 @@ function addListItem()
     let newListItem=document.createElement('li');
     newListItem.classList='list-item';
     newListItem.innerText=listText;
-
+    newListItem.setAttribute('onclick','crossed(this)');
+    
     let ulItem=document.querySelector('ul');
 
     setTimeout( ()=>{
         ulItem.appendChild(newListItem);
     },300);
+}
+
+function crossed(element)
+{
+    if(element.classList.contains('checked'))
+    {
+        if(confirm('Remove the item from the list?'))
+        {
+            element.remove();
+        }
+        else
+        {
+            element.classList.remove('checked');
+        }
+        return;
+    }
+    element.classList.add('checked');
 }
