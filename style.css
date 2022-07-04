@@ -32,11 +32,13 @@ h2{
     color: black;
 }
 
-.list-item:nth-child(odd){
+.list-item:nth-child(odd),
+p:nth-child(even){
     background-color: #ddd;
 }
 
-.list-item:nth-child(even){
+.list-item:nth-child(even),
+p:nth-child(odd){
     background-color: #eee;
 }
 
@@ -72,4 +74,9 @@ h2{
     cursor: pointer;
     transition: .5s;
     background-color: #ddd;
+}
+
+p{
+    padding: 5px;
+    font-size: 12px;
 }
