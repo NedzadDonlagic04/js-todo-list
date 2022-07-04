@@ -17,6 +17,7 @@ function addListItem()
 
     setTimeout( ()=>{
         ulItem.appendChild(newListItem);
+        document.getElementById('inputId').value="";
     },300);
 }
 
